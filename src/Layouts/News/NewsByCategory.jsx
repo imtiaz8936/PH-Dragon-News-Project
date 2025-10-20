@@ -27,7 +27,7 @@ const NewsByCategory = () => {
         <div className='grid grid-cols-1 space-y-5 mt-5'>
             {
                 newsByCategory.map(news => 
-                    <NewsCard news={news}></NewsCard>
+                    <NewsCard key={news.id} news={news}></NewsCard>
                 )
             }
         </div>

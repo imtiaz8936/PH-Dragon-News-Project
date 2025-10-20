@@ -4,6 +4,8 @@ import { Outlet } from 'react-router';
 import LatestNews from '../../Components/Header/LatestNews';
 import Navbar from '../../Components/Header/Navbar';
 import Categories from '../Categories/Categories';
+import LoginWithSocialAcc from '../SocialLogin/LoginWithSocialAcc';
+import FindUsOn from '../FindUsOn/FindUsOn';
 
 const Root = () => {
     return (
@@ -31,6 +33,10 @@ const Root = () => {
                     </section>
                     <aside className="rignt-nav col-span-3">
                         <h1 className='font-bold text-xl'>Login With</h1>
+                        <div className='space-y-10'>
+                            <LoginWithSocialAcc></LoginWithSocialAcc>
+                            <FindUsOn></FindUsOn>
+                        </div>
                     </aside>
                 </div>
             </main>
