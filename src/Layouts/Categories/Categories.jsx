@@ -12,7 +12,8 @@ const Categories = () => {
                 {
                     categories.map(category =>
                         <NavLink key={category.id} 
-                        className='pl-12 py-2 w-full rounded-md'>
+                        to={`/category/${category.id}`}
+                        className='pl-12 py-2 w-full rounded-md font-semibold text-xl text-accent'>
                             {category.name}</NavLink>
                     )
                 }
