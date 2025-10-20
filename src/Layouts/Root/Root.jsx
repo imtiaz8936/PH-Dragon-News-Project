@@ -6,6 +6,8 @@ import Navbar from '../../Components/Header/Navbar';
 import Categories from '../Categories/Categories';
 import LoginWithSocialAcc from '../SocialLogin/LoginWithSocialAcc';
 import FindUsOn from '../FindUsOn/FindUsOn';
+import QZone from '../QZone/QZone';
+import Ad from '../Advertisement/Ad';
 
 const Root = () => {
     return (
@@ -36,6 +38,8 @@ const Root = () => {
                         <div className='space-y-10'>
                             <LoginWithSocialAcc></LoginWithSocialAcc>
                             <FindUsOn></FindUsOn>
+                            <QZone></QZone>
+                            <Ad></Ad>
                         </div>
                     </aside>
                 </div>
